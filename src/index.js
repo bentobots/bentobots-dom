@@ -1,1 +1,1 @@
-export { default as offsetPolygons } from './components/offsetPolygons'
+export { default as canvas } from './components/canvas'

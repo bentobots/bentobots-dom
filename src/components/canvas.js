@@ -9,7 +9,7 @@ const implementation = ({ ID } = {}) => {
 
 class UI extends React.Component {
   render () {
-    return <canvas id='canvas' width={300} height={300} />
+    return <canvas id='canvas' width={500} height={500} />
   }
 }
 
@@ -18,7 +18,7 @@ const spec = {
   description: 'returns a HTML canvas',
   implementation,
   ui: {
-    component: UI
+    component: <UI state={{id: 'canvas'}} />
   },
   inputs: {
     ID: { default: 'canvas' }
